@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Oluwafemi Firebase</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body onload="getUserProfileProvider()">
+
+  <div class="main">
+    <div class="container">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-10 ">
+          <div class="d-flex justify-content-end">
+            <button id="logoutbtn" class="btn btn-warning text-white">Logout</button>
+          </div>
+          <div class="jumbotron">
+            <div id="birthdaysomeday" class="text-center">
+              <h1><span id="datedays"> 54 </span> DAYS LEFT</h1>
+              <h5>UNTIL YOUR BIRTHDAY!</h5>
+            </div>
+
+            <div id="birthdaytoday" class="text-center">
+              <h6>Happy birthday! <span id="bname"></span>, I hope all your birthday wishes and dreams come true. here
+                is a quote for you:</h6>
+              <h3 id="textquote">Quote</h3>
+              <h6 id="textauthor">author</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+  <script src="birthday.js"></script>
+</body>
+
+</html>
